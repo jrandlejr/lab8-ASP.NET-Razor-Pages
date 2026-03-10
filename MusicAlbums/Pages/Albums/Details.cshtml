@@ -1,0 +1,22 @@
+@page "{id:int}"
+@model MusicAlbums.Pages.Albums.DetailsModel
+
+<h1>Album Details</h1>
+
+<div>
+    <h4>Album</h4>
+    <hr />
+    <dl>
+        <dt>Title</dt>
+        <dd>@Model.Album.Title</dd>
+        <dt>Artist</dt>
+        <dd>@Model.Album.Artist</dd>
+        <dt>Year</dt>
+        <dd>@Model.Album.Year</dd>
+        <dt>Genre</dt>
+        <dd>@Model.Album.Genre</dd>
+    </dl>
+</div>
+
+<a asp-page="Edit" asp-route-id="@Model.Album.Id">Edit</a>
+<a asp-page="Index">Back to List</a>
