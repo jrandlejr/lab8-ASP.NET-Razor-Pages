@@ -5,6 +5,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<MusicAlbumsContext>(options =>
+    options.UseSqlite("Data Source=MusicAlbums.db"));
 
 var app = builder.Build();
 
