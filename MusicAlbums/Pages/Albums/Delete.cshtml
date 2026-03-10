@@ -1,0 +1,27 @@
+@page "{id:int}"
+@model MusicAlbums.Pages.Albums.DeleteModel
+
+<h1>Delete Album</h1>
+
+<h3>Are you sure you want to delete this album?</h3>
+
+<div>
+    <h4>Album</h4>
+    <hr />
+    <dl>
+        <dt>Title</dt>
+        <dd>@Model.Album.Title</dd>
+        <dt>Artist</dt>
+        <dd>@Model.Album.Artist</dd>
+        <dt>Year</dt>
+        <dd>@Model.Album.Year</dd>
+        <dt>Genre</dt>
+        <dd>@Model.Album.Genre</dd>
+    </dl>
+</div>
+
+<form method="post">
+    <input type="hidden" asp-for="Album.Id" />
+    <button type="submit">Delete</button>
+    <a asp-page="Index">Back to List</a>
+</form>
