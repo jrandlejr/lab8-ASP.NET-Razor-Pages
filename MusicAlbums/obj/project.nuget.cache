@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yq6sRN/PSQ8=",
+  "dgSpecHash": "OlrAGMsAr/o=",
   "success": true,
   "projectFilePath": "C:\\Users\\jarand\\OneDrive - Interpublic\\Desktop\\Github\\lab8-ASP.NET-Razor-Pages\\MusicAlbums\\MusicAlbums.csproj",
   "expectedPackageFiles": [
@@ -78,6 +78,7 @@
     "C:\\Users\\jarand\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\10.0.4\\microsoft.entityframeworkcore.relational.10.0.4.nupkg.sha512",
     "C:\\Users\\jarand\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\10.0.4\\microsoft.entityframeworkcore.sqlite.10.0.4.nupkg.sha512",
     "C:\\Users\\jarand\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\10.0.4\\microsoft.entityframeworkcore.sqlite.core.10.0.4.nupkg.sha512",
+    "C:\\Users\\jarand\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\10.0.4\\microsoft.entityframeworkcore.tools.10.0.4.nupkg.sha512",
     "C:\\Users\\jarand\\.nuget\\packages\\microsoft.extensions.dependencymodel\\10.0.4\\microsoft.extensions.dependencymodel.10.0.4.nupkg.sha512",
     "C:\\Users\\jarand\\.nuget\\packages\\microsoft.net.stringtools\\17.11.48\\microsoft.net.stringtools.17.11.48.nupkg.sha512",
     "C:\\Users\\jarand\\.nuget\\packages\\microsoft.visualstudio.solutionpersistence\\1.0.52\\microsoft.visualstudio.solutionpersistence.1.0.52.nupkg.sha512",
