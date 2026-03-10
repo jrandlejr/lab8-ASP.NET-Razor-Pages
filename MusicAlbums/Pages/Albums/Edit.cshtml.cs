@@ -1,0 +1,45 @@
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using MusicAlbums.Models;
+
+namespace MusicAlbums.Pages.Albums;
+
+public class EditModel : PageModel
+{
+    private readonly MusicAlbumsContext _context;
+
+    public EditModel(MusicAlbumsContext context)
+    {
+        _context = context;
+    }
+
+    [BindProperty]
+    public Album Album { get; set; } = default!;
+
+    public async Task<IActionResult> OnGetAsync(int id)
+    {
+        var album = await _context.Album.FirstOrDefaultAsync(m => m.Id == id);
+
+        if (album == null)
+        {
+            return NotFound();
+        }
+
+        Album = album;
+        return Page();
+    }
+
+    public async Task<IActionResult> OnPostAsync()
+    {
+        if (!ModelState.IsValid)
+        {
+            return Page();
+        }
+
+        _context.Attach(Album).State = EntityState.Modified;
+        await _context.SaveChangesAsync();
+
+        return RedirectToPage("./Index");
+    }
+}
